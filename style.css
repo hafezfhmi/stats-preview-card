@@ -1,0 +1,139 @@
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white1: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--very-dark-blue);
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  width: 74%;
+  max-width: 1100px;
+  margin: 5rem auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-info {
+  padding: 4.5em;
+  background-color: var(--dark-desaturated-blue);
+  width: 45%;
+}
+
+.card-title {
+  margin: 0 auto 0.2em auto;
+  font-size: 2.3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.card-title span {
+  color: var(--soft-violet);
+}
+
+.card-description {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--slightly-transparent-white1);
+  display: inline-block;
+  width: 25rem;
+  line-height: 1.5rem;
+  margin-bottom: 3em;
+}
+
+.stats {
+  display: flex;
+  width: 100%;
+}
+
+.card-stats {
+  padding-right: 4em;
+  text-transform: uppercase;
+}
+
+.card-stats-number {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5em;
+}
+
+.card-stats-title {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0 auto;
+  color: var(--slightly-transparent-white2);
+  font-size: 0.8rem;
+}
+
+.card-image {
+  width: 55%;
+  background: var(--soft-violet) url(resources/images/image-header-desktop.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+    max-width: 900px;
+  }
+
+  .card-info {
+    padding: 2.2em;
+    background-color: var(--dark-desaturated-blue);
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .card-info {
+    position: relative;
+    order: 2;
+    width: auto;
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .card-description {
+    width: auto;
+    margin-bottom: 1em;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .card-stats {
+    padding-right: 0;
+  }
+
+  .card-stats-number {
+    font-size: 1.2rem;
+  }
+
+  .card-image {
+    background: var(--soft-violet) url(resources/images/image-header-mobile.jpg);
+    background-size: cover;
+    height: 40vh;
+    width: auto;
+    order: 1;
+  }
+}
