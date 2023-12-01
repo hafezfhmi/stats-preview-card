@@ -1,26 +1,31 @@
-# Practice - Ecommerce product page
+# stats preview card
 
-## Table of contents
+A stats preview card component for a Frontend Mentor challenge
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
+## Tech Stack
 
-## Overview
+**Client:** HTML and CSS
 
-### Screenshot
+## Run Locally
 
-![screenshot1](./resources/screenshot/screenshot01.png)
-![screenshot2](./resources//screenshot/screenshot02.png)
+Clone the project
 
-## My process
+```bash
+  git clone https://github.com/hafezfhmi/stats-preview-card.git
+```
 
-### Built with
+Go to the project directory
 
-- HTML & CSS
+```bash
+  cd stats-preview-card
+```
 
-### Useful resources
+Open `index.html` in your browser
 
-- Design Source: [Click here](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
+## Screenshots
+
+![App Screenshot](./resources/screenshot/screenshot01.png)
+
+## Demo
+
+https://stats-preview-card.hafezfhmi.com
